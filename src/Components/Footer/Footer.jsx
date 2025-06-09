@@ -3,7 +3,7 @@ import Sphere from '../../assets/sphere.gif'
 import sparkleSvg from '../../assets/sparkle-icon.svg';
 import vector from '../../assets/Vector.svg';
 import vector2 from '../../assets/Vector2.svg';
-import vector3 from '../../assets/Vector3.svg';
+import vector3 from '../../assets/vector3.svg';
 
 function Footer() {
     return (
