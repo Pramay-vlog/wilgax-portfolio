@@ -1,0 +1,158 @@
+.footer {
+    width: 100%;
+    /* min-height: fit-content; */
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #000;
+    min-height: fit-content;
+    height: auto;
+}
+
+
+.sphere {
+    width: 50%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.footer-title {
+    font-size: 5.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 6.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav-text {
+    font-family: Inter;
+}
+
+.sparkle-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.connect-btn a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 4.6rem;
+    background-color: #000;
+    color: #FFF;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.4rem 3.8rem;
+    border-radius: 4.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer-divider {
+    width: 90%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0.45%, #656565 24.82%, #5B5B5B 76.15%, rgba(0, 0, 0, 0.00) 100%);
+    height: 0.2185rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 1.2rem;
+}
+
+.footer-links .left {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.footer-links .icons-right {
+    display: flex;
+    gap: 3.16rem;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .sphere {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
+    .footer-title {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .connect-btn a {
+        font-size: 1.6rem;
+        padding: 1rem 2.4rem;
+        border-radius: 3rem;
+    }
+
+    .sparkle-icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .footer-divider {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .footer-links {
+        /* flex-direction: column; */
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    .footer-links .left {
+        font-size: 1.4rem;
+    }
+
+    .footer-links .icons-right {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .vector-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}

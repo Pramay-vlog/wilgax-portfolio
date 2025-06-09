@@ -1,0 +1,88 @@
+.service {
+    position: relative;
+    min-height: 100dvh;
+    padding: 1rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background: black;
+    overflow: hidden;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.wide-card {
+    max-width: 60rem;
+    width: 100%;
+}
+
+.world-image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.world-image {
+    max-width: 40rem;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: rotate-left 10s linear infinite;
+}
+
+/* Rotate animation */
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* -------------- Media Queries ----------------- */
+
+/* Tablets (900px and below) */
+@media (max-width: 900px) {
+    .service {
+        padding: 1rem 4rem;
+    }
+
+    .service-grid {
+        gap: 2rem;
+    }
+
+    .wide-card {
+        max-width: 100%;
+    }
+}
+
+/* Phones (600px and below) */
+@media (max-width: 600px) {
+    .service {
+        padding: 1rem 2rem;
+        gap: 1.5rem;
+    }
+
+    .service-grid {
+        gap: 1.5rem;
+    }
+}

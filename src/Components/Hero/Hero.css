@@ -1,0 +1,129 @@
+.hero {
+    height: 85dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8rem;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Readex Pro";
+    font-size: 6.6rem;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 0.264rem;
+    background: linear-gradient(90deg, #84A2FF 0%, #A0F7DD 50%, #88B7FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2.1rem;
+    background-size: 200% 100%;
+    animation: gradientScroll 1s linear infinite alternate;
+}
+
+.hero-subtitle {
+    font-family: "Readex Pro";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.3155rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #E1FDFF 20%, #E568FC 50%, #E2EEFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3.2rem;
+    background-size: 200% 100%;
+    animation: gradientScroll 2s linear infinite alternate;
+}
+
+.hero-image {
+    padding: 0 9.5rem;
+    width: 90dvw;
+    max-width: 120rem;
+}
+
+.hero-arrow {
+    animation: floatArrow 1s ease-in-out infinite alternate;
+}
+
+/* Floating animation for arrow */
+@keyframes floatArrow {
+    0% {
+        transform: translateY(0);
+        filter: brightness(1) sepia(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        filter: brightness(0.5) sepia(1) hue-rotate(200deg);
+    }
+}
+
+/* ---------------- Responsive Media Queries ---------------- */
+
+/* Tablets (iPads etc.) */
+@media (max-width: 900px) {
+    .hero {
+        padding: 8rem 4rem 4rem 4rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 4.8rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+        letter-spacing: 0.25rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .hero-image {
+        padding: 0 4rem;
+        width: 100%;
+    }
+
+    .hero-arrow {
+        width: 1.5rem;
+    }
+}
+
+/* Mobile (Phones) */
+@media (max-width: 600px) {
+    .hero {
+        padding: 4rem 2rem 2rem 2rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 3.6rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero-arrow {
+        width: 1.2rem;
+    }
+}
