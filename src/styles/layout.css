@@ -34,19 +34,31 @@
 .gradient-border-black::before {
     content: "";
     position: absolute;
-    inset: 0; /* shorthand for top/right/bottom/left: 0 */
+    inset: 0;
+    /* shorthand for top/right/bottom/left: 0 */
     padding: 2px;
-    background: 
+    background:
         linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #5737EE 49.56%, #795CEB 93.2%);
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-    mask: 
-        linear-gradient(#fff 0 0) content-box, 
+    mask:
+        linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude;
+    mask-composite: exclude;
     border-radius: 1rem;
     pointer-events: none;
     z-index: -1;
+}
+
+.section-title {
+    padding: 3.125rem 3.125rem;
+    color: var(--color-secondary);
+    font-family: var(--font-rf);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border-radius: 0.7rem;
 }

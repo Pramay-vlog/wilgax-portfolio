@@ -1,0 +1,80 @@
+.service {
+    margin: 0 3.125rem 3.125rem 3.125rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.child-service {
+    padding: 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: #FFF;
+    font-family: var(--font-rf);
+    border-radius: 0.7rem;
+}
+
+.service-logo {
+    width: 4.125rem;
+}
+
+.service-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.service-card-title {
+    color: #111;
+    font-family: var(--font-rf);
+    font-size: 1.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.book-call-icon {
+    width: 4.125rem;
+}
+
+.child-service-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.book-call-title-service {
+    color: #6015EB;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+.service-card-subTitle {
+    color: #111;
+    font-family: var(--font-rf);
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 150%;
+    margin-bottom: 1.25rem;
+}
+
+.service-card-pricing {
+    text-align: right;
+    font-family: var(--font-rf);
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    background: var(--color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

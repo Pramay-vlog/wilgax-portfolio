@@ -11,7 +11,7 @@ function Reason() {
 
     return (
         <section className='reason gradient-border-black'>
-            <div className="reason-title">
+            <div className="section-title">
                 Reasons to Choose Wilgax for Your Digital Journey
             </div>
             <div className="reason-cards">

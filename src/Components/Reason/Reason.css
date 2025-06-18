@@ -3,17 +3,6 @@
     padding: 1.25rem 1.25rem;
 }
 
-.reason-title {
-    padding: 3.125rem 3.125rem;
-    color: var(--color-secondary);
-    font-family: var(--font-rf);
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #FFF;
-    border-radius: 0.7rem;
-}
-
 .reason-cards {
     display: flex;
     flex-direction: row;

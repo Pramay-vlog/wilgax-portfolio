@@ -1,0 +1,102 @@
+.testimonials {
+    margin: 0 3.125rem 3.125rem 3.125rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.testimonials-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.child-testimonials {
+    background: var(--color-primary);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-family: var(--font-rf);
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.child-testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.testimonials-card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+    line-height: 150%;
+}
+
+.testimonials-card-subTitle {
+    color: var(--color-off-white-2);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.circle {
+    width: 4.125rem;
+}
+
+.book-call {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+
+.book-call-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+}
+
+.testimonial-bottom-section {
+    background: #fff;
+    padding: 1.875rem 2.5rem;
+    border-radius: 0 0 0.7rem 0.7rem;
+    font-family: var(--font-rf);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: -0.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-name {
+    color: #111;
+    font-family: var(--font-rf);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.client-role {
+    color: #81807E;
+    font-family: var(--font-rf);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.testimonial-btn {
+    width: 4rem;
+}
