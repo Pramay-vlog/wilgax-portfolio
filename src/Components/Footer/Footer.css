@@ -92,7 +92,7 @@
 @media (max-width: 900px) {
     .footer {
         height: auto;
-        padding: 4rem 2rem;
+        padding: 1rem 0 3rem 1rem;
     }
 
     .sphere {
@@ -131,7 +131,7 @@
 
     .footer-divider {
         width: 100%;
-        margin: 2rem 0;
+        margin: 1.5rem 0 0 0;
     }
 
     .footer-links {

@@ -18,7 +18,7 @@ function Footer() {
                     <div className="gradient-border">
                         <a href="#">
                             <img src={sparkleSvg} alt="Sparkle Icon" className="sparkle-icon" />
-                            <span className="nav-text gradient-text">Let's Connect</span>
+                            <span className="nav-text gradient-text">Book a free call</span>
                         </a>
                     </div>
                 </div>

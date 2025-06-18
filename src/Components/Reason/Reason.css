@@ -1,0 +1,74 @@
+.reason {
+    margin: 0 3.125rem 3.125rem 3.125rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.reason-title {
+    padding: 3.125rem 3.125rem;
+    color: var(--color-secondary);
+    font-family: var(--font-rf);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border-radius: 0.7rem;
+}
+
+.reason-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.child-reason {
+    flex: 1;
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background: var(--color-primary);
+    font-family: var(--font-rf);
+    border-radius: 0.7rem;
+}
+
+.child-reason-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.reason-card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+    line-height: 150%;
+}
+
+.reason-card-subTitle {
+    color: var(--color-off-white-2);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.circle {
+    width: 4.125rem;
+}
+
+.book-call {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+
+.book-call-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}

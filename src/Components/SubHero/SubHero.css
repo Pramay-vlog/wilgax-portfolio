@@ -1,0 +1,54 @@
+.sub-hero {
+    margin: 0 3.125rem 3.125rem 3.125rem;
+    padding: 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.child-articales {
+    flex: 1;
+    padding: 1.875rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: #FFF;
+    text-transform: uppercase;
+    font-family: var(--font-rf);
+    border-radius: 0.7rem;
+}
+
+.article-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #5737EE 49.56%, #795CEB 93.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.article-num {
+    font-size: 3.75rem;
+    font-weight: 600;
+    background: -webkit-linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #5737EE 49.56%, #795CEB 93.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle {
+    width: 5.125rem;
+}
+
+.know-more {
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.know-more-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
