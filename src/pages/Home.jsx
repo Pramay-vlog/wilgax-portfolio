@@ -6,6 +6,7 @@ import Service from '../Components/Service/Service'
 import Work from '../Components/Work/Work'
 import Testimonials from '../Components/Testimonials/Testimonials'
 import Questions from '../Components/Questions/Questions'
+import Footer from '../Components/Footer/Footer'
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
             <Work />
             <Testimonials />
             <Questions />
+            <Footer />
         </>
     )
 }

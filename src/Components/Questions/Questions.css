@@ -2,22 +2,16 @@
     display: flex;
     align-items: flex-start;
     gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .section-title {
     margin-bottom: 1.25rem;
 }
 
-.que-left {
-    /* flex: 1; */
-    height: 40rem;
-    padding: 1.25rem 1.25rem;
-    background-color: white;
-    min-width: 0;
-    border-radius: 1rem;
-}
-
 .que-right {
+    flex: 0 0 45%;
+    max-width: 45rem;
     background: var(--color-primary);
     border: 2px solid #FFF;
     border-radius: 1rem;
@@ -26,6 +20,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 2.875rem;
+}
+
+.que-left {
+    flex: 1;
+    min-width: 0;
 }
 
 .que-title {

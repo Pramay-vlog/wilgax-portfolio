@@ -1,13 +1,11 @@
 .footer {
     width: 100%;
-    /* min-height: fit-content; */
     padding: 4rem 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
-    background-color: #000;
     min-height: fit-content;
     height: auto;
 }
@@ -15,6 +13,9 @@
 
 .sphere {
     width: 50%;
+    -webkit-mask-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    mask-mode: alpha;
 }
 
 .footer-content {
@@ -37,7 +38,11 @@
 }
 
 .nav-text {
-    font-family: Inter;
+    font-family: var(--font-rf);
+    background: -webkit-linear-gradient(126deg, #6A35EE 0%, #795CEB 14.24%, #A0F7DD 49.56%, #795CEB 93.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sparkle-icon {

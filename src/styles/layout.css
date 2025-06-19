@@ -31,11 +31,17 @@
     z-index: 0;
 }
 
+.gradient-border-black-round {
+    border: 2px solid transparent;
+    background: linear-gradient(#111, #111) padding-box,
+        linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #A0F7DD 49.56%, #795CEB 93.2%) border-box;
+    border-radius: 6.875rem;
+}
+
 .gradient-border-black::before {
     content: "";
     position: absolute;
     inset: 0;
-    /* shorthand for top/right/bottom/left: 0 */
     padding: 2px;
     background:
         linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #5737EE 49.56%, #795CEB 93.2%);

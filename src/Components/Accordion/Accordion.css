@@ -1,0 +1,95 @@
+.accordion-section {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-title {
+    background: #FFF;
+    cursor: pointer;
+    padding: 2.5rem 3.75rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #111;
+    font-family: var(--font-rf);
+    font-size: 1.8125rem;
+    font-weight: 500;
+    line-height: normal;
+    font-style: normal;
+}
+
+.accordion-title::-webkit-details-marker {
+    display: none;
+}
+
+.horizontal-line-1 {
+    height: 0.1rem;
+    width: 100%;
+    background-color: #262626;
+}
+
+.accordion-content {
+    padding: 0 3.75rem 2.5rem;
+    background: white;
+    animation: accordionOpen 0.3s ease-out;
+}
+
+.accordion-text {
+    color: #333;
+    font-family: var(--font-rf);
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/* Smooth open animation */
+@keyframes accordionOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accordion-icon {
+    width: 4rem;
+    margin-left: 3.125rem;
+    transition: opacity 0.2s ease;
+}
+
+.accordion-icon.plus {
+    display: inline;
+}
+
+.accordion-icon.minus {
+    display: none;
+}
+
+/* Show correct icon based on open state */
+details[open] .accordion-icon.plus {
+    display: none;
+}
+
+details[open] .accordion-icon.minus {
+    display: inline;
+}
+
+details[open] .accordion-title {
+    padding-bottom: 1.875rem;
+}
+
+details[open] .accordion-text {
+    padding-top: 1.875rem;
+}

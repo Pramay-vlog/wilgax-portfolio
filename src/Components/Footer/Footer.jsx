@@ -14,13 +14,11 @@ function Footer() {
                     <p className="footer-title">Have a project in mind? </p>
                     <p className="subtitle">Let’s build your case study next.</p>
                 </div>
-                <div className="connect-btn">
-                    <div className="gradient-border">
+                <div className="connect-btn gradient-border-black-round">
                         <a href="#">
                             <img src={sparkleSvg} alt="Sparkle Icon" className="sparkle-icon" />
-                            <span className="nav-text gradient-text">Book a free call</span>
+                            <span className="nav-text">Book a free call</span>
                         </a>
-                    </div>
                 </div>
                 <span className='footer-divider' ></span>
                 <div className="footer-links">
