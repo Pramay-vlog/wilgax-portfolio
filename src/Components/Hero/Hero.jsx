@@ -27,13 +27,23 @@ function Hero() {
         <section className='hero'>
             <section className='sec-left gradient-border'>
                 <div className="sec-main flex">
-                    <div>
-                        <span className='sec-main-title-1'>
-                            Build once,
-                            <img src={HeroBtn} alt="Hero Button" className='hero-btn' />
-                        </span>
-                        <br />
-                        <span className='sec-main-title'>grow forever.</span>
+                    <div className='sec-main-dk'>
+                        <div className="main-l">
+                            <span className='sec-main-title-1'>Build once,</span>
+                            <div className='sec-main-title'>grow forever.</div>
+                        </div>
+                        <div className="main-r">
+                            <img src={HeroBtn} alt="Hero Button" className='hero-btn responsive-btn' />
+                        </div>
+                    </div>
+                    <div className="sec-main-mb">
+                        <div className="main-l">
+                            <span className='sec-main-title-1'>Build once,</span>
+                            <div className='sec-main-title'>grow forever.</div>
+                        </div>
+                        <div className="main-r">
+                            <img src={HeroBtn} alt="Hero Button" className='hero-btn responsive-btn' />
+                        </div>
                     </div>
                     <p className='sec-main-subtitle'>Smart automation. Real growth. No extra effort.</p>
                 </div>
@@ -46,7 +56,8 @@ function Hero() {
                 </div>
             </section>
             <aside className='sec-right gradient-border'>
-                <video className='hero-video' height={400} autoPlay loop muted playsInline>
+                {/* <video className='hero-video' height={400} autoPlay loop muted playsInline> */}
+                <video className='hero-video' height={400} muted autoPlay={false} >
                     <source src={HeroVid} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

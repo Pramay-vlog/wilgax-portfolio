@@ -4,6 +4,7 @@ import MobileApp from '../../assets/app.svg';
 import WebDev from '../../assets/web-dev.svg';
 import DigitalMarketing from '../../assets/marketing.svg';
 import BookCall from '../../assets/book-call-primary.svg';
+import CircleIcon from '../../assets/IconContainer.svg';
 
 function Service() {
     const serviceContent = [
@@ -35,10 +36,10 @@ function Service() {
 
     return (
         <section className='service gradient-border-black'>
-            <div className="section-title">
-                Our Services
-            </div>
-            <div className="service-cards">
+            <div className="section-title">Our Services</div>
+
+            {/* Desktop layout */}
+            <div className="service-cards desktop-service">
                 {serviceContent.map((item, index) => (
                     <article className="child-service" key={index}>
                         <div className="child-service-logo">
@@ -47,14 +48,31 @@ function Service() {
                                 <h3 className='service-card-title'>{item.title}</h3>
                             </span>
                             <div className="book-call">
-                                <img src={BookCall} alt="Book Call Icon" className='book-call-icon' />
+                                <img src={BookCall} alt="Book Call Icon" className='book-call-icon-service' />
                                 <h3 className='book-call-title-service'>Book A Call</h3>
                             </div>
                         </div>
-
                         <p className='service-card-subTitle'>{item.subTitle}</p>
                         <p className='service-card-pricing'>{item.price}</p>
+                    </article>
+                ))}
+            </div>
 
+            {/* Mobile layout */}
+            <div className="mobile-service">
+                {serviceContent.map((item, index) => (
+                    <article className="child-service" key={index}>
+                        <div className="service-logo-title">
+                            <img src={item.logo} alt={`${item.title} Logo`} className='service-logo' />
+                            <h3 className='service-card-title'>{item.title}</h3>
+                        </div>
+                        <div>
+                            <p className='service-card-pricing'>{item.price}</p>
+                            <p className='service-card-subTitle'>{item.subTitle}</p>
+                        </div>
+                        <div className="mobile-call">
+                            <h3 className='book-call-title-service'>Book A Call</h3>
+                        </div>
                     </article>
                 ))}
             </div>
@@ -62,4 +80,4 @@ function Service() {
     )
 }
 
-export default Service
+export default Service;

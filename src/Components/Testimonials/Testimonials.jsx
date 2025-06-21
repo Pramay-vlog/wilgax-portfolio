@@ -29,7 +29,7 @@ function Testimonials() {
                             </div>
                         </article>
                         <div className="testimonial-bottom-section">
-                            <span className="botton-left">
+                            <span className="bottom-left">
                                 <p className="client-name">{item.client}</p>
                                 <p className="client-role">{item.ownerOf}</p>
                             </span>

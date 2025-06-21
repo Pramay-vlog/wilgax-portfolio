@@ -98,14 +98,26 @@
     white-space: nowrap;
     position: relative;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .sec-banner-track {
     display: inline-flex;
     gap: 1.25rem;
-    animation: scrollBanner 120s linear infinite;
+    /* animation: scrollBanner 120s linear infinite; */
     min-width: 200%;
     box-sizing: border-box;
+    letter-spacing: 0.1rem;
+}
+
+.sec-main-mb {
+    display: none;
+}
+
+.sec-main-dk {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @keyframes scrollBanner {
@@ -115,5 +127,106 @@
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 819px) {
+    .hero {
+        flex-direction: column;
+        margin: 0 2.125rem 1.25rem 2.125rem;
+        gap: 2rem;
+    }
+
+    .sec-left {
+        height: auto;
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+    .sec-main {
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .sec-main-title-1,
+    .sec-main-title {
+        font-size: 3.5rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.4;
+        flex-wrap: wrap;
+    }
+
+    .hero-btn {
+        width: 16rem;
+    }
+
+    .sec-main-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+
+    .sec-right {
+        display: none;
+    }
+
+    .sec-banner {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+
+    .sec-banner-track {
+        gap: 1rem;
+    }
+
+    .sec-main-dk {
+        display: none;
+    }
+
+    .sec-main-mb {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 820px) {
+
+    .sec-right {
+        display: none;
+    }
+
+    .sec-left {
+        height: auto;
+    }
+
+    .sec-main-title-1,
+    .sec-main-title {
+        font-size: 5rem;
+    }
+
+    .hero-btn {
+        width: 18rem;
+    }
+
+    .sec-main-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .sec-main-dk {
+        display: none;
+    }
+
+    .sec-main-mb {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1220px) and (min-width: 1025px) {
+    .sec-main-title-1,
+    .sec-main-title {
+        font-size: 5.125rem;
     }
 }

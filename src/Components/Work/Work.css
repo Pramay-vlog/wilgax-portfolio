@@ -34,7 +34,6 @@
     flex: 1;
     font-family: var(--font-rf);
     border-radius: 0.7rem;
-    /* height: 25rem; */
 }
 
 .w1 {
@@ -97,6 +96,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .work-image1 {
@@ -131,13 +135,19 @@
 .tech-used {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 0.7rem;
+    padding: 2.5rem;
+    gap: 2rem;
+    /* Consistent spacing between blocks */
+    height: 100%;
 }
+
 
 .technology-used {
     background-color: #FFF;
     border-radius: 0.7rem;
-    padding: 2.5rem 2.5rem;
+    padding: 1.25rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -156,7 +166,7 @@
 .team-members {
     background-color: #FFF;
     border-radius: 0.7rem;
-    padding: 1.5rem 2.5rem;
+    padding: 1.25rem 1.25rem;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -178,6 +188,10 @@
     text-transform: uppercase;
 }
 
+.book-call-icon {
+    width: 4.125rem;
+}
+
 .book-a-call-btn {
     padding: 1.5rem 1.5rem;
     background: var(--color-primary);
@@ -191,4 +205,89 @@
     line-height: 150%;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.technology-used,
+.team-members {
+    width: 100%;
+}
+
+.technology-used {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.mobile-work {
+    display: none;
+}
+
+@media (max-width: 1150px) {
+    .work-cards {
+        display: none;
+    }
+
+    .mobile-work {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+    }
+
+    .mobile-work-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        width: -webkit-fill-available;
+    }
+
+    .mobile-work-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-work-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 0.7rem;
+        font-family: var(--font-rf);
+        height: 28rem;
+        box-sizing: border-box;
+    }
+
+    .book-a-call-btn {
+        margin-top: 1rem;
+        padding: 1.25rem;
+        text-align: center;
+        background: var(--color-primary);
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 600;
+        border-radius: 0.7rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 819px) {
+    .work{
+        margin: 0 2.125rem 3.125rem 2.125rem;
+    }
+
+    .mobile-work {
+        flex-wrap: wrap;
+    }
 }
