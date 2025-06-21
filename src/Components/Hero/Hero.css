@@ -105,7 +105,7 @@
 .sec-banner-track {
     display: inline-flex;
     gap: 1.25rem;
-    animation: scrollBanner 120s linear infinite;
+    animation: scrollBanner 50s linear infinite;
     min-width: 200%;
     box-sizing: border-box;
     letter-spacing: 0.1rem;
@@ -189,6 +189,10 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .sec-banner-track {
+        animation: scrollBanner 10s linear infinite;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 820px) {
@@ -222,9 +226,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .sec-banner-track {
+        animation: scrollBanner 30s linear infinite;
+    }
 }
 
 @media (max-width: 1220px) and (min-width: 1025px) {
+
     .sec-main-title-1,
     .sec-main-title {
         font-size: 5.125rem;
