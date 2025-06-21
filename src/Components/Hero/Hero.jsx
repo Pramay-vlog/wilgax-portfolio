@@ -56,8 +56,8 @@ function Hero() {
                 </div>
             </section>
             <aside className='sec-right gradient-border'>
-                {/* <video className='hero-video' height={400} autoPlay loop muted playsInline> */}
-                <video className='hero-video' height={400} muted autoPlay={false} >
+                <video className='hero-video' height={400} autoPlay loop muted playsInline>
+                {/* <video className='hero-video' height={400} muted autoPlay={false} > */}
                     <source src={HeroVid} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
