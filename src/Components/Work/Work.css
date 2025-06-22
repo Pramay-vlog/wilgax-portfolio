@@ -104,12 +104,12 @@
 }
 
 .work-image1 {
-    background: url("../../assets/project1Image.svg");
+    background: url("../../assets/project1Image.webp");
     background-size: cover;
 }
 
 .work-image2 {
-    background: url("../../assets/project2img.svg");
+    background: url("../../assets/project2img.webp");
     background-size: cover;
     background-position: center;
 }

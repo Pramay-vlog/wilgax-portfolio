@@ -1,6 +1,6 @@
 import './Hero.css';
 import HeroBtn from '../../assets/hero-btn.svg';
-import HeroVid from '../../assets/clicks.mp4';
+import HeroVid from '../../assets/clicks.webm';
 
 function Hero() {
 
@@ -57,8 +57,7 @@ function Hero() {
             </section>
             <aside className='sec-right gradient-border'>
                 <video className='hero-video' height={400} autoPlay loop muted playsInline>
-                {/* <video className='hero-video' height={400} muted autoPlay={false} > */}
-                    <source src={HeroVid} type="video/mp4" />
+                    <source src={HeroVid} type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
             </aside>

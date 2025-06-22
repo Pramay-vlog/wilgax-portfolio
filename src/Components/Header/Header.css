@@ -22,7 +22,7 @@
     font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
-    font-family: var(--font-pop);
+    font-family: var(--font-rf);
     line-height: 150%;
     color: var(--color-off-black-2);
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -45,7 +45,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     text-decoration: none;
-    font-family: var(--font-pop);
+    font-family: var(--font-rf);
 }
 
 /* Hamburger Button */
@@ -61,6 +61,10 @@
     position: relative;
 }
 
+.hamburger-btn.menu-open {
+    color: #FFF;
+}
+
 /* Mobile Nav Drawer */
 .mobile-menu {
     position: fixed;
@@ -69,7 +73,7 @@
     height: 100vh;
     width: 50%;
     max-width: 320px;
-    background-color: #fff;
+    background: var(--color-off-black);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     padding: 5rem 2rem;
     transition: right 0.3s ease-in-out;
@@ -99,6 +103,7 @@
 .mobile-menu .nav-items a,
 .mobile-menu .nav-items-2 a {
     display: block;
+    color: #FFF;
 }
 
 /* Responsive Breakpoints */

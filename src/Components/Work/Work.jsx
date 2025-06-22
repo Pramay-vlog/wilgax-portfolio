@@ -3,11 +3,11 @@ import BookCall from '../../assets/book-call-primary.svg';
 import Project1 from '../../assets/project1.svg';
 import Project2 from '../../assets/project2.svg';
 import RedDot from '../../assets/red-dot.svg';
-import m1 from '../../assets/m1.svg';
-import m2 from '../../assets/m2.svg';
-import m3 from '../../assets/m3.svg';
-import m4 from '../../assets/m4.svg';
-import m5 from '../../assets/m5.svg';
+import m1 from '../../assets/m1.webp';
+import m2 from '../../assets/m2.webp';
+import m3 from '../../assets/m3.webp';
+import m4 from '../../assets/m4.webp';
+import m5 from '../../assets/m5.webp';
 
 function Work() {
     return (
@@ -24,7 +24,7 @@ function Work() {
             <div className="work-cards">
                 <article className="child-work w1">
                     <div className="child-work-logo">
-                        <img src={Project1} alt='project1 Logo' className='project-logo' />
+                        <img src={Project1} alt='project1 Logo' className='project-logo' loading="lazy" />
                         <h3 className='project-card-title'>Zenith Fitness App</h3>
                     </div>
                     <div className="project-tags">
@@ -70,11 +70,11 @@ function Work() {
                     <div className="team-members gradient-border">
                         <p className="team-members-title">Team Members</p>
                         <span className="members-icon">
-                            <img src={m1} alt="Member 1" className="member-icon" />
-                            <img src={m2} alt="Member 2" className="member-icon" />
-                            <img src={m3} alt="Member 3" className="member-icon" />
-                            <img src={m4} alt="Member 4" className="member-icon" />
-                            <img src={m5} alt="Member 5" className="member-icon" />
+                            <img src={m1} alt="Member 1" className="member-icon" loading="lazy" />
+                            <img src={m2} alt="Member 2" className="member-icon" loading="lazy" />
+                            <img src={m3} alt="Member 3" className="member-icon" loading="lazy" />
+                            <img src={m4} alt="Member 4" className="member-icon" loading="lazy" />
+                            <img src={m5} alt="Member 5" className="member-icon" loading="lazy" />
                         </span>
                     </div>
                     <div className="book-a-call-btn">Book A Call</div>
@@ -85,7 +85,7 @@ function Work() {
             <div className="work-cards">
                 <article className="child-work w1">
                     <div className="child-work-logo">
-                        <img src={Project2} alt='project2 Logo' className='project-logo' />
+                        <img src={Project2} alt='project2 Logo' className='project-logo' loading="lazy" />
                         <h3 className='project-card-title'>A-Aura Ecommerce</h3>
                     </div>
                     <div className="project-tags">

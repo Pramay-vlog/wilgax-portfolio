@@ -4,7 +4,6 @@ import MobileApp from '../../assets/app.svg';
 import WebDev from '../../assets/web-dev.svg';
 import DigitalMarketing from '../../assets/marketing.svg';
 import BookCall from '../../assets/book-call-primary.svg';
-import CircleIcon from '../../assets/IconContainer.svg';
 
 function Service() {
     const serviceContent = [

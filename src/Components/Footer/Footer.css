@@ -94,6 +94,16 @@
     gap: 3.16rem;
 }
 
+.sphere {
+  object-fit: cover;
+}
+
+.sparkle-icon {
+  background: url("../../assets/sparkle-icon.svg") no-repeat center center;
+  width: 19px;
+  height: 20px;
+}
+
 @media (max-width: 900px) {
     .footer {
         height: auto;

@@ -1,5 +1,5 @@
 import './Header.css';
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/logo.webp';
 import { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -23,7 +23,10 @@ function Header() {
             </nav>
 
             {/* Mobile Menu Toggle */}
-            <button className="hamburger-btn" onClick={toggleMenu}>
+            <button
+                className={`hamburger-btn ${menuOpen ? 'menu-open' : ''}`}
+                onClick={toggleMenu}
+            >
                 {menuOpen ? <FiX size={24} /> : <HiOutlineMenuAlt3 size={24} />}
             </button>
 
