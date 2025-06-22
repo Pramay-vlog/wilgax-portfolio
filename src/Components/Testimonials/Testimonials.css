@@ -37,7 +37,7 @@
 
 .testimonials-card-subTitle {
     color: var(--color-off-white-2);
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 150%;
 }
@@ -100,7 +100,7 @@
 .client-role {
     color: #81807E;
     font-family: var(--font-rf);
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;

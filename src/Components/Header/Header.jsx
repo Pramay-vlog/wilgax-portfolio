@@ -25,6 +25,7 @@ function Header() {
             {/* Mobile Menu Toggle */}
             <button
                 className={`hamburger-btn ${menuOpen ? 'menu-open' : ''}`}
+                aria-label="Toggle menu"
                 onClick={toggleMenu}
             >
                 {menuOpen ? <FiX size={24} /> : <HiOutlineMenuAlt3 size={24} />}

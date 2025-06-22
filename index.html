@@ -32,13 +32,35 @@
       onload="this.media='all'"
     />
 
-    <!-- Fallback -->
+    <!-- Fallback for users without JS -->
     <noscript>
       <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100..900;1,100..900&family=REM:ital,wght@0,100..900;1,100..900&family=Raleway&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet"
       />
     </noscript>
+
+    <!-- ✅ Critical hero title styles inline to reduce LCP -->
+    <style>
+      .sec-main-title,
+      .sec-main-title-1 {
+        font-family: "REM", "Segoe UI", sans-serif;
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #111;
+        letter-spacing: 0.05rem;
+        line-height: 1.4;
+      }
+
+      @media (min-width: 820px) {
+        .sec-main-title,
+        .sec-main-title-1 {
+          font-size: 6.125rem;
+          letter-spacing: 0.1225rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

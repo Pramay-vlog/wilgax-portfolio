@@ -63,6 +63,7 @@
 
 .hero-btn {
     width: 22rem;
+    height: 4.5rem;
     cursor: pointer;
 }
 
@@ -158,10 +159,11 @@
 
     .hero-btn {
         width: 16rem;
+        height: 3.5rem;
     }
 
     .sec-main-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         letter-spacing: 0.2rem;
         line-height: 1.4;
         margin-bottom: 2rem;
@@ -173,7 +175,7 @@
 
     .sec-banner {
         padding: 1.5rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         border-radius: 0.5rem;
     }
 
@@ -212,6 +214,7 @@
 
     .hero-btn {
         width: 18rem;
+        height: 4rem;
     }
 
     .sec-main-subtitle {
