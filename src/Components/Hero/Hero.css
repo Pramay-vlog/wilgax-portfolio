@@ -63,7 +63,7 @@
 
 .hero-btn {
     width: 22rem;
-    height: 4.5rem;
+    height: auto;
     cursor: pointer;
 }
 
@@ -159,7 +159,7 @@
 
     .hero-btn {
         width: 16rem;
-        height: 3.5rem;
+        height: auto;
     }
 
     .sec-main-subtitle {
@@ -214,7 +214,7 @@
 
     .hero-btn {
         width: 18rem;
-        height: 4rem;
+        height: auto;
     }
 
     .sec-main-subtitle {
