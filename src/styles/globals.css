@@ -13,6 +13,10 @@
 html {
     font-size: 62.5%;
     background-image: url('../assets/BG.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
 }
 
 body {
