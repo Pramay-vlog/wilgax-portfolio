@@ -21,8 +21,8 @@ function About() {
             </Suspense>
             <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
                 <Hero
-                    title1="Our Comprehensive"
-                    title2="Digital Solutions"
+                    title1="Powering Your"
+                    title2="Next Chapter"
                     subtitle="We turn complex ideas into effortless experiences."
                     component="Services"
                 />
