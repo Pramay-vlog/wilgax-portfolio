@@ -1,13 +1,16 @@
 import './Questions.css';
 import BookCall from '../../assets/book-call-primary.svg';
 import Accordion from '../Accordion/Accordion';
+import { useNavigate } from 'react-router-dom';
 
 function Questions() {
+    const navigate = useNavigate();
+
     return (
         <section className='testimonials gradient-border-black'>
             <div className="section-title">
                 <p>Frequently Asked Questions</p>
-                <span className="book-call">
+                <span className="book-call" onClick={() => navigate('/services')}>
                     <img src={BookCall} alt="Book Call Icon" className='book-call-icon' loading="lazy" />
                     <h3 className='work-title'>All works</h3>
                 </span>

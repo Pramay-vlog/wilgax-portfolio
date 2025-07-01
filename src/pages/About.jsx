@@ -16,13 +16,17 @@ const fallbackStyle = {
 function About() {
     return (
         <>
-            <Header />
-            <Hero
-                title1="Elevating Brands"
-                title2="in the Digital Age"
-                subtitle=""
-                component="About"
-            />
+            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
+                <Header />
+            </Suspense>
+            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
+                <Hero
+                    title1="Elevating Brands"
+                    title2="in the Digital Age"
+                    subtitle=""
+                    component="About"
+                />
+            </Suspense>
 
             <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
                 <Achievements />

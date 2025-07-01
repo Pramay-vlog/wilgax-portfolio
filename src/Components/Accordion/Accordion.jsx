@@ -14,6 +14,8 @@ const Accordion = ({ title, content }) => {
                     className="accordion-icon plus"
                     aria-hidden="true"
                     loading="lazy"
+                    width={20}
+                    height={20}
                 />
                 <img
                     src={MinhsBtn}
@@ -21,6 +23,8 @@ const Accordion = ({ title, content }) => {
                     className="accordion-icon minus"
                     aria-hidden="true"
                     loading="lazy"
+                    width={20}
+                    height={20}
                 />
             </summary>
             <div className="accordion-content">

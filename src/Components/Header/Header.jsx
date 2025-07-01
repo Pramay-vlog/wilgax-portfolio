@@ -3,10 +3,11 @@ import Logo from '../../assets/logo.webp';
 import { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggleMenu = () => setMenuOpen(prev => !prev);
 
@@ -17,7 +18,15 @@ function Header() {
 
     return (
         <header className="header gradient-border flex-between container">
-            <img src={Logo} alt="Wilgax Logo" className="logo" loading="lazy" />
+            <img
+                src={Logo}
+                alt="Wilgax Logo"
+                className="logo"
+                loading="lazy"
+                width="150"
+                height="60"
+                onClick={() => navigate('/')}
+            />
 
             {/* Desktop Nav */}
             <nav className="navbar">

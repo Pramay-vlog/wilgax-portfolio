@@ -2,8 +2,10 @@ import './Hero.css';
 import HeroBtn from '../../assets/hero-btn.svg';
 import DownArrow from '../../assets/down-arrow.svg';
 import HeroVid from '../../assets/clicks.webm';
+import { useNavigate } from 'react-router-dom';
 
 function Hero({ title1, title2, subtitle, component }) {
+    const navigate = useNavigate();
 
     const services = [
         'Automation Tools',
@@ -38,21 +40,41 @@ function Hero({ title1, title2, subtitle, component }) {
                     <section className='sec-left gradient-border'>
                         <div className="sec-main flex">
                             <div className='sec-main-dk'>
-                                <div className="main-l">
+                                <h1 className="main-l">
                                     <span className='sec-main-title-1'>{title1}</span>
-                                    <div className='sec-main-title'>{title2}</div>
-                                </div>
+                                    <br />
+                                    <span className='sec-main-title'>{title2}</span>
+                                </h1>
                                 <div className="main-r">
-                                    <img src={HeroBtn} alt="Hero Button" className='hero-btn responsive-btn' loading="lazy" />
+                                    <img
+                                        src={HeroBtn}
+                                        alt="Hero Button"
+                                        className='hero-btn responsive-btn'
+                                        loading="eager"  // Eagerly load above-the-fold image
+                                        width={200}
+                                        height={50}
+                                        decoding="async" // Hint for performance
+                                        onClick={() => navigate('/contact')}
+                                    />
                                 </div>
                             </div>
                             <div className="sec-main-mb">
-                                <div className="main-l">
+                                <h1 className="main-l">
                                     <span className='sec-main-title-1'>{title1}</span>
-                                    <div className='sec-main-title'>{title2}</div>
-                                </div>
+                                    <br />
+                                    <span className='sec-main-title'>{title2}</span>
+                                </h1>
                                 <div className="main-r">
-                                    <img src={HeroBtn} alt="Hero Button" className='hero-btn responsive-btn' loading="lazy" />
+                                    <img
+                                        src={HeroBtn}
+                                        alt="Hero Button"
+                                        className='hero-btn responsive-btn'
+                                        loading="eager"  // Eagerly load above-the-fold image
+                                        width={200}
+                                        height={50}
+                                        decoding="async" // Hint for performance
+                                        onClick={() => navigate('/contact')}
+                                    />
                                 </div>
                             </div>
                             <p
@@ -86,21 +108,41 @@ function Hero({ title1, title2, subtitle, component }) {
                     >
                         <div className="sec-main">
                             <div className='sec-main-dk'>
-                                <div className="main-l">
+                                <h1 className="main-l">
                                     <span className='sec-main-title-1'>{title1}</span>
-                                    <div className='sec-main-title'>{title2}</div>
-                                </div>
+                                    <br />
+                                    <span className='sec-main-title'>{title2}</span>
+                                </h1>
                                 <div className="main-r">
-                                    <img src={HeroBtn} alt="Hero Button" className='hero-btn responsive-btn' loading="lazy" />
+                                    <img
+                                        src={HeroBtn}
+                                        alt="Hero Button"
+                                        className='hero-btn responsive-btn'
+                                        loading="eager"  // Eagerly load above-the-fold image
+                                        width={200}
+                                        height={50}
+                                        decoding="async" // Hint for performance
+                                        onClick={() => navigate('/contact')}
+                                    />
                                 </div>
                             </div>
                             <div className="sec-main-mb">
-                                <div className="main-l">
+                                <h1 className="main-l">
                                     <span className='sec-main-title-1'>{title1}</span>
-                                    <div className='sec-main-title'>{title2}</div>
-                                </div>
+                                    <br />
+                                    <span className='sec-main-title'>{title2}</span>
+                                </h1>
                                 <div className="main-r">
-                                    <img src={HeroBtn} alt="Hero Button" className='hero-btn responsive-btn' loading="lazy" />
+                                    <img
+                                        src={HeroBtn}
+                                        alt="Hero Button"
+                                        className='hero-btn responsive-btn'
+                                        loading="eager"  // Eagerly load above-the-fold image
+                                        width={200}
+                                        height={50}
+                                        decoding="async" // Hint for performance
+                                        onClick={() => navigate('/contact')}
+                                    />
                                 </div>
                             </div>
                             <p

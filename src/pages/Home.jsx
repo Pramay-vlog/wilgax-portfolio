@@ -19,13 +19,17 @@ const fallbackStyle = {
 function Home() {
     return (
         <>
-            <Header />
-            <Hero
-                title1="Build once,"
-                title2="grow forever."
-                subtitle="Smart automation. Real growth. No extra efforts."
-                component="Home"
-            />
+            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
+                <Header />
+            </Suspense>
+            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
+                <Hero
+                    title1="Build once,"
+                    title2="grow forever."
+                    subtitle="Smart automation. Real growth. No extra efforts."
+                    component="Home"
+                />
+            </Suspense>
 
             <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
                 <SubHero />

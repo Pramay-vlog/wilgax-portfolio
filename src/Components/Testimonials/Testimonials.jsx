@@ -1,8 +1,11 @@
 import './Testimonials.css';
 import BookCall from '../../assets/book-call-primary.svg';
 import Btn from '../../assets/testimonialBtn.svg';
+import { useNavigate } from 'react-router-dom';
 
 function Testimonials() {
+    const navigate = useNavigate();
+
     const reasonContent = [
         { title: "Wilgax turned our business around!", subTitle: 'Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!', client: 'Sarah Thompson', ownerOf: 'CEO of BlueBloom' },
         { title: "Wilgax's expertise in digital marketing is unmatched.", subTitle: 'Their data-driven approach and innovative strategies have significantly improved our online presence.', client: 'John Walker', ownerOf: 'Marketing Manager at TechCorp' },
@@ -16,7 +19,7 @@ function Testimonials() {
                 <p>Testimonials</p>
                 <span className="book-call">
                     <img src={BookCall} alt="Book Call Icon" className='book-call-icon' loading="lazy" />
-                    <h3 className='work-title'>All works</h3>
+                    <h3 className='work-title' onClick={() => navigate('/services')}>All works</h3>
                 </span>
             </div>
             <div className="testimonials-cards">
@@ -33,7 +36,7 @@ function Testimonials() {
                                 <p className="client-name">{item.client}</p>
                                 <p className="client-role">{item.ownerOf}</p>
                             </span>
-                            <img src={Btn} alt="Button Icon" className='testimonial-btn' loading="lazy" />
+                            <img src={Btn} alt="Button Icon" className='testimonial-btn' loading="lazy" width={200} height={50} />
                         </div>
                     </div>
                 ))}

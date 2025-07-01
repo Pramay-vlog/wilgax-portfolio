@@ -5,6 +5,9 @@
 
 .logo {
     width: 8.5rem;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 /* Default Navbar (Desktop) */

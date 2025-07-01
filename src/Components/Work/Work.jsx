@@ -8,13 +8,16 @@ import m2 from '../../assets/m2.webp';
 import m3 from '../../assets/m3.webp';
 import m4 from '../../assets/m4.webp';
 import m5 from '../../assets/m5.webp';
+import { useNavigate } from 'react-router-dom';
 
 function Work() {
+    const navigate = useNavigate();
+
     return (
         <section className='work gradient-border-black'>
             <div className="section-title">
                 <p>Our Works</p>
-                <span className="book-call">
+                <span className="book-call" onClick={() => navigate('/services')}>
                     <img src={BookCall} alt="Book Call Icon" className='book-call-icon' loading="lazy" />
                     <h3 className='work-title'>All works</h3>
                 </span>
@@ -77,7 +80,7 @@ function Work() {
                             <img src={m5} alt="Member 5" className="member-icon" loading="lazy" />
                         </span>
                     </div>
-                    <div className="book-a-call-btn">Book A Call</div>
+                    <div className="book-a-call-btn" onClick={() => navigate('/contact')}>Book A Call</div>
                 </article>
             </div>
 
@@ -138,7 +141,7 @@ function Work() {
                             <img src={m5} alt="Member 5" className="member-icon" loading="lazy" />
                         </span>
                     </div>
-                    <div className="book-a-call-btn">Book A Call</div>
+                    <div className="book-a-call-btn" onClick={() => navigate('/contact')}>Book A Call</div>
                 </article>
             </div>
 
@@ -163,23 +166,23 @@ function Work() {
                         <div className={`mobile-work-image ${project.image}`}></div>
                         <div className="mobile-work-content">
                             <div className="child-work-logo">
-                                <img src={project.logo} alt={project.title} className="project-logo" loading="lazy" />
+                                <img src={project.logo} alt={project.title} className="project-logo" loading="lazy" width={200} height={100} />
                                 <h3 className="project-card-title">{project.title}</h3>
                             </div>
                             <div className="project-tags">
                                 <span className="project-category">
                                     <p className="category">Category</p>
-                                    <img src={RedDot} alt="Red Dot" className="red-dot" loading="lazy" />
+                                    <img src={RedDot} alt="Red Dot" className="red-dot" loading="lazy" width={8} height={8} />
                                     <p className="category">{project.category}</p>
                                 </span>
                                 <span className="project-category">
                                     <p className="category">Time Taken</p>
-                                    <img src={RedDot} alt="Red Dot" className="red-dot" loading="lazy" />
+                                    <img src={RedDot} alt="Red Dot" className="red-dot" loading="lazy" width={8} height={8} />
                                     <p className="category">{project.time}</p>
                                 </span>
                             </div>
                             <p className="project-info">{project.desc}</p>
-                            <div className="book-a-call-btn">Book A Call</div>
+                            <div className="book-a-call-btn" onClick={() => navigate('/contact')}>Book A Call</div>
                         </div>
                     </div>
                 ))}

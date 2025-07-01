@@ -1,7 +1,10 @@
 import './SubHero.css';
 import CircleIcon from '../../assets/IconContainer.svg';
+import { useNavigate } from 'react-router-dom';
 
 function SubHero() {
+    const navigate = useNavigate();
+
     const subHeroContent = [
         { title: "Clients", count: '200+' },
         { title: "Projects", count: '280+' },
@@ -26,7 +29,7 @@ function SubHero() {
                     <p className='article-num'>10+</p>
                 </article>
 
-                <article className="child-articales know-more flex-center-sh">
+                <article className="child-articales know-more flex-center-sh" onClick={() => navigate('/services')}>
                     <img src={CircleIcon} alt="Circle Icon" className='circle' loading="lazy" />
                     <h3 className='know-more-title'>Know More</h3>
                 </article>

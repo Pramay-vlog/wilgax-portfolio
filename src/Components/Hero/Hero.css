@@ -3,6 +3,7 @@
     align-items: flex-start;
     gap: 1.25rem;
     margin: 0 3.125rem 1.25rem 3.125rem;
+    min-height: 40rem;
 }
 
 .sec-left {
@@ -41,8 +42,7 @@
     gap: 1.25rem;
 }
 
-.sec-main-title-1 {
-    font-family: var(--font-rem);
+/* .sec-main-title-1 {
     text-transform: uppercase;
     font-size: 5.125rem;
     font-weight: 600;
@@ -54,17 +54,17 @@
 }
 
 .sec-main-title {
-    font-family: var(--font-rem);
     text-transform: uppercase;
     font-size: 5.125rem;
     font-weight: 600;
     letter-spacing: 0.1225rem;
     color: var(--color-secondary);
-}
+} */
 
 .hero-btn {
     width: 22rem;
     height: auto;
+    aspect-ratio: 16 / 6;
     cursor: pointer;
 }
 
@@ -120,10 +120,11 @@
 .sec-main-dk {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .main-l {
-    margin-right: 1rem;
+    margin-right: 1rem; 
 }
 
 .stats-card {
@@ -231,13 +232,12 @@
     }
 
     .sec-left {
-        height: auto;
         padding: 2rem 2rem;
         width: 100%;
     }
 
     .sec-main {
-        padding: 0;
+        padding: 3.5rem 2rem 2rem 2rem;
         gap: 2rem;
     }
 
@@ -252,6 +252,7 @@
     .hero-btn {
         width: 16rem;
         height: auto;
+        aspect-ratio: 16 / 6;
     }
 
     .sec-main-subtitle {
@@ -307,18 +308,15 @@
         display: none !important;
     }
 
-    .sec-left {
-        height: auto;
-    }
-
     .sec-main-title-1,
     .sec-main-title {
-        font-size: 5rem;
+        font-size: 4.125rem;
     }
 
     .hero-btn {
         width: 18rem;
         height: auto;
+        aspect-ratio: 16 / 6;
     }
 
     .sec-main-subtitle {

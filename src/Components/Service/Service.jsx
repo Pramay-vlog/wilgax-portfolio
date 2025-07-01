@@ -13,8 +13,11 @@ import WebDev1 from '../../assets/web-dev-1.svg';
 import WebDev2 from '../../assets/web-dev-2.svg';
 import Marketing1 from '../../assets/marketing-1.svg';
 import Marketing2 from '../../assets/marketing-2.svg';
+import { useNavigate } from 'react-router-dom';
 
 function Service({ component }) {
+    const navigate = useNavigate();
+
     const serviceContent = [
         {
             title: "Automation Tools",
@@ -87,7 +90,7 @@ function Service({ component }) {
                                         <img src={item.logo} alt={`${item.title} Logo`} className='service-logo' loading="lazy" />
                                         <h3 className='service-card-title'>{item.title}</h3>
                                     </span>
-                                    <div className="book-call">
+                                    <div className="book-call" onClick={() => navigate('/contact')}>
                                         <img src={BookCall} alt="Book Call Icon" className='book-call-icon-service' loading="lazy" />
                                         <h3 className='book-call-title-service'>Book A Call</h3>
                                     </div>
@@ -110,7 +113,7 @@ function Service({ component }) {
                                     <p className='service-card-pricing'>{item.price}</p>
                                     <p className='service-card-subTitle'>{item.subTitle}</p>
                                 </div>
-                                <div className="book-a-call-btn">
+                                <div className="book-a-call-btn" onClick={() => navigate('/contact')}>
                                     <h3 className='book-call-title-service'>Book A Call</h3>
                                 </div>
                             </article>
@@ -131,7 +134,7 @@ function Service({ component }) {
                                             <img src={item.logo} alt={`${item.title} Logo`} className='service-logo' loading="lazy" />
                                             <h3 className='service-card-title'>{item.title}</h3>
                                         </span>
-                                        <div className="book-call">
+                                        <div className="book-call" onClick={() => navigate('/contact')}>
                                             <img src={BookCall} alt="Book Call Icon" className='book-call-icon-service' loading="lazy" />
                                             <h3 className='book-call-title-service'>Book A Call</h3>
                                         </div>
@@ -146,7 +149,7 @@ function Service({ component }) {
                                         <span className="service-logo-title">
                                             <h3 className='service-card-title-new'>{item.title}</h3>
                                         </span>
-                                        <div className="book-call">
+                                        <div className="book-call" onClick={() => navigate('/contact')}>
                                             <img src={CircleIcon} alt="Book Call Icon" className='book-call-icon-service' loading="lazy" />
                                             <h3 className='book-call-title-service-new'>Book A Call</h3>
                                         </div>
@@ -182,7 +185,7 @@ function Service({ component }) {
                                     <p className='service-card-pricing'>{item.price}</p>
                                     <p className='service-card-subTitle'>{item.subTitle}</p>
                                 </div>
-                                <div className="mobile-call">
+                                <div className="mobile-call" onClick={() => navigate('/contact')}>
                                     <h3 className='book-call-title-service'>Book A Call</h3>
                                 </div>
                             </article>
