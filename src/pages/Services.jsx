@@ -2,10 +2,7 @@ import { lazy, Suspense } from 'react';
 import Header from '../Components/Header/Header';
 import Hero from '../Components/Hero/Hero';
 
-const SubHero = lazy(() => import('../Components/SubHero/SubHero'));
-const Reason = lazy(() => import('../Components/Reason/Reason'));
 const Service = lazy(() => import('../Components/Service/Service'));
-const Work = lazy(() => import('../Components/Work/Work'));
 const Testimonials = lazy(() => import('../Components/Testimonials/Testimonials'));
 const Questions = lazy(() => import('../Components/Questions/Questions'));
 const Footer = lazy(() => import('../Components/Footer/Footer'));
@@ -16,31 +13,21 @@ const fallbackStyle = {
     color: '#FFF',
 };
 
-function Home() {
+function About() {
     return (
         <>
             <Header />
             <Hero
-                title1="Build once,"
-                title2="grow forever."
-                subtitle="Smart automation. Real growth. No extra efforts."
-                component="Home"
+                title1="Our Comprehensive"
+                title2="Digital Solutions"
+                subtitle="We turn complex ideas into effortless experiences."
+                component="Services"
             />
 
             <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
-                <SubHero />
-            </Suspense>
-
-            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
-                <Reason />
-            </Suspense>
-
-            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
-                <Service />
-            </Suspense>
-
-            <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
-                <Work />
+                <Service
+                    component="Services"
+                />
             </Suspense>
 
             <Suspense fallback={<div style={fallbackStyle}>Loading...</div>}>
@@ -55,7 +42,7 @@ function Home() {
                 <Footer />
             </Suspense>
         </>
-    );
+    )
 }
 
-export default Home;
+export default About;

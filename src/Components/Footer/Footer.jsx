@@ -17,7 +17,7 @@ function Footer() {
                     <p className="footer-title">Have a project in mind? </p>
                     <p className="subtitle">Let’s build your case study next.</p>
                 </div>
-                <div className="connect-btn gradient-border-black-round">
+                <button className="connect-btn gradient-border-black-round">
                     <a href="#">
                         <img
                             src={sparkleSvg}
@@ -27,14 +27,14 @@ function Footer() {
                         />
                         <span className="nav-text">Book a free call</span>
                     </a>
-                </div>
+                </button>
                 <span className='footer-divider' ></span>
                 <div className="footer-links">
                     <p className="left">© 2024  | @Wilgax</p>
                     <div className="icons-right">
-                        <a href="#"><img src={vector3} alt="Vector Icon 3" className="vector-icon" /></a>
-                        <a href="#"><img src={vector} alt="Vector Icon" className="vector-icon" /></a>
-                        <a href="#"><img src={vector2} alt="Vector Icon 2" className="vector-icon" /></a>
+                        <a href="#"><img src={vector3} alt="Vector Icon 3" className="vector-icon" loading="lazy" /></a>
+                        <a href="#"><img src={vector} alt="Vector Icon" className="vector-icon" loading="lazy" /></a>
+                        <a href="#"><img src={vector2} alt="Vector Icon 2" className="vector-icon" loading="lazy" /></a>
                     </div>
                 </div>
             </div>

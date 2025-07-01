@@ -13,12 +13,14 @@ const Accordion = ({ title, content }) => {
                     alt="Expand"
                     className="accordion-icon plus"
                     aria-hidden="true"
+                    loading="lazy"
                 />
                 <img
                     src={MinhsBtn}
                     alt="Collapse"
                     className="accordion-icon minus"
                     aria-hidden="true"
+                    loading="lazy"
                 />
             </summary>
             <div className="accordion-content">

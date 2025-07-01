@@ -35,6 +35,7 @@
 }
 
 .sec-main {
+    display: flex;
     padding: 3.5rem;
     flex-direction: column;
     gap: 1.25rem;
@@ -43,7 +44,7 @@
 .sec-main-title-1 {
     font-family: var(--font-rem);
     text-transform: uppercase;
-    font-size: 6.125rem;
+    font-size: 5.125rem;
     font-weight: 600;
     letter-spacing: 0.1225rem;
     color: var(--color-secondary);
@@ -55,7 +56,7 @@
 .sec-main-title {
     font-family: var(--font-rem);
     text-transform: uppercase;
-    font-size: 6.125rem;
+    font-size: 5.125rem;
     font-weight: 600;
     letter-spacing: 0.1225rem;
     color: var(--color-secondary);
@@ -121,6 +122,97 @@
     flex-wrap: wrap;
 }
 
+.main-l {
+    margin-right: 1rem;
+}
+
+.stats-card {
+    background: var(--color-primary);
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-rf);
+    text-align: center;
+    height: -webkit-fill-available;
+    gap: 1.25rem;
+}
+
+.stats-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.stats-count {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.know-more-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    grid-column: span 2;
+    width: 100%;
+    margin-top: 2.125rem;
+}
+
+.know-more-img-down {
+    cursor: pointer;
+}
+
+.know-more-title-down {
+    background: -webkit-linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #5737EE 49.56%, #795CEB 93.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.sec-main-subtitle {
+    font-family: var(--font-rem);
+    text-transform: uppercase;
+    font-size: 1.40rem;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    background: -webkit-linear-gradient(126deg, #6A35EE 0%, #9930EF 14.24%, #5737EE 49.56%, #795CEB 93.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hide the subtitle when the class is added */
+.hide-subtitle {
+    display: none !important;
+}
+
+/* Optional responsiveness */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-about-stats {
+        margin: 2rem 1.5rem;
+        padding: 2rem;
+    }
+
+    .stats-card {
+        padding: 2rem;
+    }
+}
+
+
 @keyframes scrollBanner {
     0% {
         transform: translateX(0);
@@ -170,7 +262,7 @@
     }
 
     .sec-right {
-        display: none;
+        display: none !important;
     }
 
     .sec-banner {
@@ -190,6 +282,18 @@
     .sec-main-mb {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .sec-main-subtitle {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+
+    .sec-main-subtitle.hide-subtitle {
+        display: none !important;
     }
 
     .sec-banner-track {
@@ -200,7 +304,7 @@
 @media (max-width: 1024px) and (min-width: 820px) {
 
     .sec-right {
-        display: none;
+        display: none !important;
     }
 
     .sec-left {
@@ -228,6 +332,7 @@
     .sec-main-mb {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
 
     .sec-banner-track {
@@ -239,6 +344,6 @@
 
     .sec-main-title-1,
     .sec-main-title {
-        font-size: 5.125rem;
+        font-size: 4.125rem;
     }
 }

@@ -22,7 +22,7 @@ function Reason() {
                             <p className='reason-card-subTitle'>{item.subTitle}</p>
                         </div>
                         <div className="book-call">
-                            <img src={CircleIcon} alt="Circle Icon" className='circle' />
+                            <img src={CircleIcon} alt="Circle Icon" className='circle' loading="lazy" />
                             <h3 className='book-call-title'>Book A Call</h3>
                         </div>
                     </article>

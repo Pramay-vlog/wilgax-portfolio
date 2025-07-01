@@ -15,7 +15,7 @@ function Work() {
             <div className="section-title">
                 <p>Our Works</p>
                 <span className="book-call">
-                    <img src={BookCall} alt="Book Call Icon" className='book-call-icon' />
+                    <img src={BookCall} alt="Book Call Icon" className='book-call-icon' loading="lazy" />
                     <h3 className='work-title'>All works</h3>
                 </span>
             </div>
@@ -30,12 +30,12 @@ function Work() {
                     <div className="project-tags">
                         <span className="project-category">
                             <p className="category">Category</p>
-                            <img src={RedDot} alt="Red Dot" className='red-dot' />
+                            <img src={RedDot} alt="Red Dot" className='red-dot' loading="lazy" />
                             <p className="category">Mobile App Development</p>
                         </span>
                         <span className="project-category">
                             <p className="category">Time Taken</p>
-                            <img src={RedDot} alt="Red Dot" className='red-dot' />
+                            <img src={RedDot} alt="Red Dot" className='red-dot' loading="lazy" />
                             <p className="category">4 months</p>
                         </span>
                     </div>
@@ -91,12 +91,12 @@ function Work() {
                     <div className="project-tags">
                         <span className="project-category">
                             <p className="category">Category</p>
-                            <img src={RedDot} alt="Red Dot" className='red-dot' />
+                            <img src={RedDot} alt="Red Dot" className='red-dot' loading="lazy" />
                             <p className="category">Web Design & Development</p>
                         </span>
                         <span className="project-category">
                             <p className="category">Time Taken</p>
-                            <img src={RedDot} alt="Red Dot" className='red-dot' />
+                            <img src={RedDot} alt="Red Dot" className='red-dot' loading="lazy" />
                             <p className="category">3 months</p>
                         </span>
                     </div>
@@ -131,11 +131,11 @@ function Work() {
                     <div className="team-members gradient-border">
                         <p className="team-members-title">Team Members</p>
                         <span className="members-icon">
-                            <img src={m1} alt="Member 1" className="member-icon" />
-                            <img src={m2} alt="Member 2" className="member-icon" />
-                            <img src={m3} alt="Member 3" className="member-icon" />
-                            <img src={m4} alt="Member 4" className="member-icon" />
-                            <img src={m5} alt="Member 5" className="member-icon" />
+                            <img src={m1} alt="Member 1" className="member-icon" loading="lazy" />
+                            <img src={m2} alt="Member 2" className="member-icon" loading="lazy" />
+                            <img src={m3} alt="Member 3" className="member-icon" loading="lazy" />
+                            <img src={m4} alt="Member 4" className="member-icon" loading="lazy" />
+                            <img src={m5} alt="Member 5" className="member-icon" loading="lazy" />
                         </span>
                     </div>
                     <div className="book-a-call-btn">Book A Call</div>
@@ -163,18 +163,18 @@ function Work() {
                         <div className={`mobile-work-image ${project.image}`}></div>
                         <div className="mobile-work-content">
                             <div className="child-work-logo">
-                                <img src={project.logo} alt={project.title} className="project-logo" />
+                                <img src={project.logo} alt={project.title} className="project-logo" loading="lazy" />
                                 <h3 className="project-card-title">{project.title}</h3>
                             </div>
                             <div className="project-tags">
                                 <span className="project-category">
                                     <p className="category">Category</p>
-                                    <img src={RedDot} alt="Red Dot" className="red-dot" />
+                                    <img src={RedDot} alt="Red Dot" className="red-dot" loading="lazy" />
                                     <p className="category">{project.category}</p>
                                 </span>
                                 <span className="project-category">
                                     <p className="category">Time Taken</p>
-                                    <img src={RedDot} alt="Red Dot" className="red-dot" />
+                                    <img src={RedDot} alt="Red Dot" className="red-dot" loading="lazy" />
                                     <p className="category">{project.time}</p>
                                 </span>
                             </div>

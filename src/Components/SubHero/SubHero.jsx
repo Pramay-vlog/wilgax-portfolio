@@ -27,7 +27,7 @@ function SubHero() {
                 </article>
 
                 <article className="child-articales know-more flex-center-sh">
-                    <img src={CircleIcon} alt="Circle Icon" className='circle' />
+                    <img src={CircleIcon} alt="Circle Icon" className='circle' loading="lazy" />
                     <h3 className='know-more-title'>Know More</h3>
                 </article>
             </article>

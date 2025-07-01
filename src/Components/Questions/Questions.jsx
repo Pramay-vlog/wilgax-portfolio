@@ -8,7 +8,7 @@ function Questions() {
             <div className="section-title">
                 <p>Frequently Asked Questions</p>
                 <span className="book-call">
-                    <img src={BookCall} alt="Book Call Icon" className='book-call-icon' />
+                    <img src={BookCall} alt="Book Call Icon" className='book-call-icon' loading="lazy" />
                     <h3 className='work-title'>All works</h3>
                 </span>
             </div>

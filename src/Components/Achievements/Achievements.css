@@ -1,0 +1,190 @@
+.achievements {
+    margin: 0 3.125rem 3.125rem 3.125rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.section-title-right {
+    padding: 3.125rem 3.125rem;
+    color: var(--color-secondary);
+    font-family: var(--font-rf);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border-radius: 0.7rem;
+    text-align: right;
+}
+
+.achievements-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.child-achievements {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    font-family: var(--font-rf);
+    border-radius: 0.7rem;
+}
+
+.child-achievements-awards {
+    flex: 1;
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background: #FFF;
+    font-family: var(--font-rf);
+    border-radius: 0.7rem;
+}
+
+.child-achievements-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.child-achievements-content-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.achievements-card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    line-height: 150%;
+    padding: 1rem 1.875rem;
+}
+
+.achievements-card-title-2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    line-height: 150%;
+}
+
+.achievements-card-subTitle {
+    padding: 2.5rem 1.875rem;
+    background: var(--color-primary);
+    color: var(--color-off-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.circle {
+    width: 4.125rem;
+}
+
+.achievements-description {
+    padding: 1.875rem 1.875rem;
+    color: #898989;
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.child-content-date-outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child-content-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.2rem;
+    border-radius: 2.8125rem;
+    background: var(--color-primary);
+    width: fit-content;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.reason-card-subTitle {
+    font-size: 1.2rem;
+    color: #898989;
+}
+
+.awards-icon {
+    width: 4.125rem;
+}
+
+.achievements-card-title {
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 1024px) {
+    .achievements-cards {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .child-achievements {
+        flex: 1 1 calc(50% - 0.625rem);
+        /* 2 per row */
+    }
+
+    .child-achievements-awards {
+        flex: 1 1 calc(50% - 0.625rem);
+        /* 2 per row */
+    }
+}
+
+@media (max-width: 819px) {
+
+    .achievements {
+        margin: 0 2.125rem 3.125rem 2.125rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        padding: 3.125rem 1.5rem;
+    }
+
+    .section-title-right {
+        font-size: 2rem;
+        padding: 3.125rem 1.5rem;
+    }
+
+    .child-achievements {
+        flex: 1 1 100%;
+    }
+
+    .child-achievements-awards {
+        flex: 1 1 100%;
+    }
+
+    .achievements-card-title {
+        font-size: 1.5rem;
+    }
+
+    .achievements-card-subTitle {
+        font-size: 1.2rem;
+    }
+
+    .book-call-title {
+        font-size: 1.125rem;
+    }
+
+    .circle {
+        width: 3.5rem;
+    }
+}
