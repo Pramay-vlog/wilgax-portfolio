@@ -21,7 +21,7 @@ function Footer() {
                     <p className="subtitle">Let’s build your case study next.</p>
                 </div>
                 <div className="connect-btn gradient-border-black-round" onClick={() => navigate('/contact')}>
-                    <a href="#">
+                    <a href="https://calendly.com/infra-wilgax/30min" target="_blank" rel="noopener noreferrer">
                         <img
                             src={sparkleSvg}
                             alt="Sparkle Icon"

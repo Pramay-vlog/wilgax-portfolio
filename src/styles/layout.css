@@ -107,6 +107,48 @@ button:hover {
     filter: brightness(0.9);
 }
 
+.form-input.error,
+.form-textarea.error {
+    border: thick double #FF0000;
+}
+
+.error-message {
+    color: #FFF;
+    font-size: 1.25rem;
+    letter-spacing: 0.4px;
+
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.success-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.form-btn {
+    transition: background-color 0.3s;
+}
+
+.form-btn.loading {
+    background-color: #28a745;
+    cursor: not-allowed;
+}
+
+.form-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
 @media (max-width: 819px) {
     .container {
         margin: 3.125rem 2.125rem;
